@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 55517523}
+  - component: {fileID: 55517524}
   m_Layer: 0
   m_Name: MeteorSpawn
   m_TagString: Untagged
@@ -147,13 +148,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 55517522}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.028896, y: 0.071655646, z: -0.06550099}
+  m_LocalPosition: {x: 0, y: 8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &55517524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55517522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90b9ef9992bf1244db9f9a8db6f77589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meteorPrefab: {fileID: 8048152330182019187, guid: 37b3209fc8f414f41a7c689c31d93991, type: 3}
+  minimumSpawnDelay: 1
+  maximumSpawnDelay: 3
+  spawnAxisXLimit: 6
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,6 +402,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1279743920}
   - component: {fileID: 1279743919}
+  - component: {fileID: 1279743921}
   m_Layer: 0
   m_Name: UpperShredder
   m_TagString: Untagged
@@ -433,6 +451,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1279743921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279743918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c2e6ddc1db89a34da3fb2dfe27a7cfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1280521686
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,6 +573,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1339780505}
   - component: {fileID: 1339780504}
+  - component: {fileID: 1339780506}
   m_Layer: 0
   m_Name: LowerShredder
   m_TagString: Untagged
@@ -591,6 +622,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1339780506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339780503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c2e6ddc1db89a34da3fb2dfe27a7cfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1348994215
 GameObject:
   m_ObjectHideFlags: 0
